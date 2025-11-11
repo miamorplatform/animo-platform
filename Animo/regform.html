@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animo login</title>
+    <style>
+        .input{
+            padding:20px;
+            border:none;
+            box-shadow: 2.5px 1px 4.5px 3.5px brown;
+            background-color: #0a1930;
+            color: white;
+            border-radius:10px;
+            width:250px;
+            margin-left:8px;
+            
+        }
+        body{
+           background-color: #0a1930; 
+        }
+        .img{
+            width:250px;
+            margin:0 auto;
+            display: block;
+            border-radius: 30px;
+        }
+        .box{
+               box-shadow: 2.5px 1px 4.5px 3.5px brown;
+               padding:15px;
+               border-radius:30px;
+               
+        }
+   .mybtn {
+       border: 1px solid brown;
+       border-radius: 10px;
+       background-color: brown;
+       padding: 20px;
+       width: 300px;
+       color: white;
+    }
+    .countries{
+        width:290px;
+        padding:10px;
+        background-color: black;
+        border-radius:15px;
+        display:none;
+        
+    }
+    .btn{
+        width:60px;
+        background-color: black;
+        color: white;
+        border:none;
+        font-size:13px;
+        padding:20px;
+        display: block;
+       
+    }
+    .pack{
+        width:130px;
+        border-radius:10px;
+        margin-top:8px;
+        
+    }
+    .Nigerian-pack {
+  display: none;
+  gap: 5px;
+  border: 1px solid brown;
+  height: 290px;
+  padding: 5px;
+  width: 307px;
+  border-radius: 20px;
+}
+
+.show {
+  display: flex;
+}
+
+    .myp{
+        color: white;
+    }
+    .packs{
+        margin-top:20px;
+        border:1px solid brown;
+        border-radius:15px;
+        padding:9px;
+    }
+    .price{
+        color: blue;
+        font-size:17px;
+    }
+    .secbtn{
+        background-color:#0a1930;
+        color:gray;
+        padding:20px;
+        width:93%;
+        border-radius:10px;
+        border:none;
+        text-align: Left;
+        box-shadow: 2.5px 1px 4.5px 3.5px brown;
+        margin-left:7px;
+    }
+    .planp{
+        color: white;
+        font-size:15px;
+        
+    }
+      .planp1{
+        color: white;
+        font-size:15px;
+        padding:7px;
+        height:15px;
+        
+        box-shadow: 2.5px 1px 4.5px 3.5px gray;
+    }
+    b{
+        color: white;
+    }
+    .plantype{
+        display:flex;
+        gap:160px;
+    }
+      .plantyp{
+        display:flex;
+        gap:130px;
+    }
+    .newprice{
+        display:flex;
+        gap:160px;
+    }
+    .country{
+        display:flex;
+        gap:130px;
+    }
+    .numdet{
+        display:flex;
+        gap:90px;
+    }
+    .myb{
+        width:50px;
+    }
+    .acc{
+        display:flex;
+        gap:7px;
+    }
+    #copy{
+        width:30px;
+        height:30px;
+        border-radius:1px;
+        margin-top:15px;
+        border:none;
+        
+        
+    }
+      .plantype1{
+        display:flex;
+        gap:155px;
+    }
+    .sele{
+        width:50px;
+    }
+    .cancel{
+        padding:15px;
+        border-radius:4px;
+        width:25%;
+        background-color:brown;
+        color:white;
+        border:none;
+       
+    }
+    .redi{
+        padding:15px;
+        border-radius:4px;
+        width:70%;
+        
+        color:white;
+        border:none;
+        border:1px solid brown;
+        background-color:#0a1930 ;
+    }
+     .cop{
+         width:15px;
+         border-radius:50px;
+         
+     }
+     .pay{
+         border:1px solid brown;
+         padding:15px;
+         border-radius:10px;
+         position: fixed;
+         
+         background-color:#0a1930 ;
+         margin-right:50px;
+         display:none;
+     }
+    </style>
+</head>
+<body>
+    <section class="box">
+        <img class="img" src="copy.jpg" alt="Logo">
+        <form id="registrationForm">
+            <input type="text" id="fullname" class="input" placeholder="Full Name">
+            <br>
+            <!-- Payment details for Nigeria Silver -->
+            <div class="pay" id="ngpay">
+               <div class="plantype1">
+                   <b class="sele">PLAN SELECTED</b>
+                   <p class="planp">SILVER</p>
+               </div>
+               <div class="newprice">
+                   <b>PRICE</b>
+                   <p class="planp">NGN10,000</p>
+               </div>
+               <div class="country">
+                   <b>COUNTRY</b>
+                   <p class="planp">NIGERIA</p>
+               </div>
+               <div class="plantyp">
+                   <b>ACCOUNT HOLDER</b>
+                   <p class="planp">Uchechukwu Godswill Ezeribe</p>
+               </div>
+               <div class="numdet">
+                   <b class="myb">ACCOUNT NUMBER</b>
+                   <div class="acc">
+                       <p class="planp1">2346976001</p>
+                       <button type="button" class="copy-btn">
+                           <img class="cop" src="logo.jpg" alt="Copy">
+                       </button>
+                   </div>
+               </div>
+               <div class="plantype">
+                   <b>BANK</b>
+                   <p class="planp">United Bank for Africa (U.B.A)</p>
+               </div>
+               <div class="planbtn">
+                   <button type="button" class="cancel">
+                       Cancel 
+                   </button>
+                   <button type="button" class="redi">
+                       I've made payment 
+                   </button>
+               </div>
+           </div>
+           
+           <!-- Payment details for Nigeria Gold -->
+           <div class="pay" id="ngpay2">
+               <div class="plantype1">
+                   <b class="sele">PLAN SELECTED</b>
+                   <p class="planp">GOLD</p>
+               </div>
+               <div class="newprice">
+                   <b>PRICE</b>
+                   <p class="planp">NGN15,000</p>
+               </div>
+               <div class="country">
+                   <b>COUNTRY</b>
+                   <p class="planp">NIGERIA</p>
+               </div>
+               <div class="plantyp">
+                   <b>ACCOUNT HOLDER</b>
+                   <p class="planp">Uchechukwu Godswill Ezeribe</p>
+               </div>
+               <div class="numdet">
+                   <b class="myb">ACCOUNT NUMBER</b>
+                   <div class="acc">
+                       <p class="planp1">2346976001</p>
+                       <button type="button" class="copy-btn">
+                           <img class="cop" src="copy.png" alt="Copy">
+                       </button>
+                   </div>
+               </div>
+               <div class="plantype">
+                   <b>BANK</b>
+                   <p class="planp">United Bank for Africa (U.B.A)</p>
+               </div>
+               <div class="planbtn">
+                   <button type="button" class="cancel">
+                       Cancel 
+                   </button>
+                   <button type="button" class="redi">
+                       I've made payment 
+                   </button>
+               </div>
+           </div>
+           
+           <!-- Payment details for Ghana Silver -->
+           <div class="pay" id="Gnpay">
+               <div class="plantype1">
+                   <b class="sele">PLAN SELECTED</b>
+                   <p class="planp">SILVER</p>
+               </div>
+               <div class="newprice">
+                   <b>PRICE</b>
+                   <p class="planp">170 GHS</p>
+               </div>
+               <div class="country">
+                   <b>COUNTRY</b>
+                   <p class="planp">GHANA</p>
+               </div>
+               <div class="plantyp">
+                   <b>ACCOUNT HOLDER</b>
+                   <p class="planp">SOLOMON AVUDZIVI</p>
+               </div>
+               <div class="numdet">
+                   <b class="myb">ACCOUNT NUMBER</b>
+                   <div class="acc">
+                       <p class="planp1">0265898328</p>
+                       <button type="button" class="copy-btn">
+                           <img class="cop" src="copy.jpg" alt="Copy">
+                       </button>
+                   </div>
+               </div>
+               <div class="plantype">
+                   <b>BANK</b>
+                   <p class="planp">Airtel Tigo</p>
+               </div>
+               <div class="planbtn">
+                   <button type="button" class="cancel">
+                       Cancel 
+                   </button>
+                   <button type="button" class="redi">
+                       I've made payment 
+                   </button>
+               </div>
+           </div>    
+           
+           <!-- Payment details for Ghana Gold -->
+           <div class="pay" id="Gnpay2">
+               <div class="plantype1">
+                   <b class="sele">PLAN SELECTED</b>
+                   <p class="planp">GOLD</p>
+               </div>
+               <div class="newprice">
+                   <b>PRICE</b>
+                   <p class="planp">250 GHS</p>
+               </div>
+               <div class="country">
+                   <b>COUNTRY</b>
+                   <p class="planp">GHANA</p>
+               </div>
+               <div class="plantyp">
+                   <b>ACCOUNT HOLDER</b>
+                   <p class="planp">SOLOMON AVUDZIVI</p>
+               </div>
+               <div class="numdet">
+                   <b class="myb">ACCOUNT NUMBER</b>
+                   <div class="acc">
+                       <p class="planp1">0265898328</p>
+                       <button type="button" class="copy-btn">
+                           <img class="cop" src="copy.png" alt="Copy">
+                       </button>
+                   </div>
+               </div>
+               <div class="plantype">
+                   <b>BANK</b>
+                   <p class="planp">Airtel Tigo</p>
+               </div>
+               <div class="planbtn">
+                   <button type="button" class="cancel">
+                       Cancel 
+                   </button>
+                   <button type="button" class="redi">
+                       I've made payment 
+                   </button>
+               </div>
+           </div>
+           
+           <!-- Payment details for Cameroon Silver -->
+           <div class="pay" id="Cnpay">
+               <div class="plantype1">
+                   <b class="sele">PLAN SELECTED</b>
+                   <p class="planp">SILVER</p>
+               </div>
+               <div class="newprice">
+                   <b>PRICE</b>
+                   <p class="planp">8,500 XAF</p>
+               </div>
+               <div class="country">
+                   <b>COUNTRY</b>
+                   <p class="planp">CAMEROON</p>
+               </div>
+               <div class="plantyp">
+                   <b>ACCOUNT HOLDER</b>
+                   <p class="planp">MALLE DANIEL ITOE</p>
+               </div>
+               <div class="numdet">
+                   <b class="myb">ACCOUNT NUMBER</b>
+                   <div class="acc">
+                       <p class="planp1">682380694</p>
+                       <button type="button" class="copy-btn">
+                           <img class="cop" src="copy.png" alt="Copy">
+                       </button>
+                   </div>
+               </div>
+               <div class="plantype">
+                   <b>BANK</b>
+                   <p class="planp">MTN Momo</p>
+               </div>
+               <div class="planbtn">
+                   <button type="button" class="cancel">
+                       Cancel 
+                   </button>
+                   <button type="button" class="redi">
+                       I've made payment 
+                   </button>
+               </div>
+           </div>
+           
+           <!-- Payment details for Cameroon Gold -->
+           <div class="pay" id="Cnpay2">
+               <div class="plantype1">
+                   <b class="sele">PLAN SELECTED</b>
+                   <p class="planp">GOLD</p>
+               </div>
+               <div class="newprice">
+                   <b>PRICE</b>
+                   <p class="planp">14,000 XAF</p>
+               </div>
+               <div class="country">
+                   <b>COUNTRY</b>
+                   <p class="planp">CAMEROON</p>
+               </div>
+               <div class="plantyp">
+                   <b>ACCOUNT HOLDER</b>
+                   <p class="planp">MALLE DANIEL ITOE</p>
+               </div>
+               <div class="numdet">
+                   <b class="myb">ACCOUNT NUMBER</b>
+                   <div class="acc">
+                       <p class="planp1">682380694</p>
+                       <button type="button" class="copy-btn">
+                           <img class="cop" src="copy.png" alt="Copy">
+                       </button>
+                   </div>
+               </div>
+               <div class="plantype">
+                   <b>BANK</b>
+                   <p class="planp">MTN Momo</p>
+               </div>
+               <div class="planbtn">
+                   <button type="button" class="cancel">
+                       Cancel 
+                   </button>
+                   <button type="button" class="redi">
+                       I've made payment 
+                   </button>
+               </div>
+           </div>
+            <br>
+            <input type="email" id="email" class="input" placeholder="Email">
+            <br>
+            <br>
+            <input type="text" id="username" class="input" placeholder="Username">
+            <br>
+            <br>
+            <input type="password" id="password" class="input" placeholder="Password">
+            <br>
+            <br>
+          <button type="button" id="select" class="secbtn">Select Country</button>
+             <br>
+             
+            <div class="countries" id="countries">
+                <button type="button" class="btn" id="niger">Nigeria</button>
+                <button type="button" class="btn" id="Ghana">Ghana</button>
+                <button type="button" class="btn" id="camer">Cameroon</button>
+                <br>
+                <br>
+            </div>
+            <br>
+           
+           
+     <div class="Nigerian-pack" id="ngpack">
+                <div class="packs" id="ngsil">
+                    <img src="fourth.jpg" alt="Silver Plan" class="pack">
+                    <p class="myp">SILVER</p>
+                    <p class="price">NGN10,000</p>
+                </div>
+                <div class="packs" id="nggol">
+                    <img src="fifth.jpg" alt="Gold Plan" class="pack">
+                    <p class="myp">GOLD</p>
+                    <p class="price">NGN15,000</p>
+                </div>
+            </div>
+            
+            <div class="Nigerian-pack" id="Gnpack">
+                <div class="packs" id="gnsil">
+                    <img src="fourth.jpg" alt="Silver Plan" class="pack">
+                    <p class="myp">SILVER</p>
+                    <p class="price">170 GHS</p>
+                </div>
+                <div class="packs" id="gngol">
+                    <img src="fifth.jpg" alt="Gold Plan" class="pack">
+                    <p class="myp">GOLD</p>
+                    <p class="price">250 GHS</p>
+                </div>
+            </div>
+            
+            <div class="Nigerian-pack" id="Cnpack">
+                <div class="packs" id="cnsil">
+                    <img src="fourth.jpg" alt="Silver Plan" class="pack">
+                    <p class="myp">SILVER</p>
+                    <p class="price">8,500 XAF</p>
+                </div>
+                <div class="packs" id="cngol">
+                    <img src="fifth.jpg" alt="Gold Plan" class="pack">
+                    <p class="myp">GOLD</p>
+                    <p class="price">14,000 XAF</p>
+                </div>
+            </div>
+            <br>
+            <input type="text" id="key" class="input" placeholder="Activation Key">
+            <br>
+            <br>
+            <button type="submit" class="mybtn">REGISTER</button>
+        </form>
+    </section>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Country selection elements
+        const niger = document.getElementById("niger");
+        const Ghana = document.getElementById("Ghana");
+        const camer = document.getElementById("camer");
+        const select = document.getElementById("select");
+        const ngpack = document.getElementById("ngpack");
+        const Gnpack = document.getElementById("Gnpack");
+        const Cnpack = document.getElementById("Cnpack");
+        const countries = document.getElementById("countries");
+        
+        // Payment detail elements
+        const ngpay = document.getElementById('ngpay');
+        const ngpay2 = document.getElementById('ngpay2');
+        const Gnpay = document.getElementById('Gnpay');
+        const Gnpay2 = document.getElementById('Gnpay2');
+        const Cnpay = document.getElementById('Cnpay');
+        const Cnpay2 = document.getElementById('Cnpay2');
+        
+        // Plan selection elements
+        const ngsil = document.getElementById("ngsil");
+        const nggol = document.getElementById("nggol");
+        const gnsil = document.getElementById("gnsil");
+        const gngol = document.getElementById("gngol");
+        const cnsil = document.getElementById("cnsil");
+        const cngol = document.getElementById("cngol");
+        
+        // Form element
+        const form = document.getElementById("registrationForm");
+        
+        // Country selection functionality
+        select.addEventListener('click', (event) => {
+            event.preventDefault();
+            countries.style.display = "block";
+        });
+
+        niger.addEventListener('click', (event) => {
+            event.preventDefault();
+            select.textContent = "Nigeria";
+            countries.style.display = "none";
+            ngpack.classList.add('show');
+            Gnpack.classList.remove('show');
+            Cnpack.classList.remove('show');
+            hideAllPaymentDetails();
+        });
+
+        Ghana.addEventListener('click', (event) => {
+            event.preventDefault();
+            select.textContent = "Ghana";
+            countries.style.display = "none";
+            ngpack.classList.remove('show');
+            Gnpack.classList.add('show');
+            Cnpack.classList.remove('show');
+            hideAllPaymentDetails();
+        });
+
+        camer.addEventListener('click', (event) => {
+            event.preventDefault();
+            select.textContent = "Cameroon";
+            countries.style.display = "none";
+            ngpack.classList.remove('show');
+            Gnpack.classList.remove('show');
+            Cnpack.classList.add('show');
+            hideAllPaymentDetails();
+        });
+        
+        // Function to hide all payment details
+        function hideAllPaymentDetails() {
+            ngpay.style.display = "none";
+            ngpay2.style.display = "none";
+            Gnpay.style.display = "none";
+            Gnpay2.style.display = "none";
+            Cnpay.style.display = "none";
+            Cnpay2.style.display = "none";
+        }
+        
+        // Plan selection functionality
+        function displayngsil() {
+            hideAllPaymentDetails();
+            ngpay.style.display = "block";
+        }
+
+        function displaynggol() {
+            hideAllPaymentDetails();
+            ngpay2.style.display = "block";
+        }
+
+        function displaygnsil() {
+            hideAllPaymentDetails();
+            Gnpay.style.display = "block";
+        }
+
+        function displaygngol() {
+            hideAllPaymentDetails();
+            Gnpay2.style.display = "block";
+        }
+
+        function displaycnsil() {
+            hideAllPaymentDetails();
+            Cnpay.style.display = "block";
+        }
+
+        function displaycngol() {
+            hideAllPaymentDetails();
+            Cnpay2.style.display = "block";
+        }
+
+        // Add event listeners for plan selection
+        ngsil.addEventListener('click', displayngsil);
+        nggol.addEventListener('click', displaynggol);
+        gnsil.addEventListener('click', displaygnsil);
+        gngol.addEventListener('click', displaygngol);
+        cnsil.addEventListener('click', displaycnsil);
+        cngol.addEventListener('click', displaycngol);
+        
+        // Copy button functionality
+        const copyButtons = document.querySelectorAll('.copy-btn');
+        copyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const accountNumber = this.parentElement.querySelector('.planp1').textContent;
+                navigator.clipboard.writeText(accountNumber).then(() => {
+                    alert('Account number copied to clipboard!');
+                });
+            });
+        });
+        
+        // Cancel button functionality
+        const cancelButtons = document.querySelectorAll('.cancel');
+        cancelButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                hideAllPaymentDetails();
+            });
+        });
+        
+        // Form submission
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Add form validation and submission logic here
+            alert('Form submitted successfully!');
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+      
+      
+        .img {
+            width: 57px;
+            border-radius: 360px;
+            height: 60px;
+        }
+        .logo-text {
+            font-size: 50px;
+            margin-top: 6px;
+            font-weight: normal; /* This ensures it's not bold */
+        }
+        .mis {
+            display: flex;
+            gap: 0px;
+            align-items: center; /* Better alignment for logo and text */
+        }
+        .header {
+            display: flex;
+            z-index: 100;
+            gap: 50px;
+            position: fixed;
+           background-color: #000080; /* Navy blue */
+           color: #000033; /* Very dark blue for text */
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            margin-left: 4px;
+            align-items: center; /* Better vertical alignment */
+           
+        }
+        .msu {
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 12px;
+            color: white;
+            background-color: darkblue;
+            margin-top: 18px;
+            display: block;
+            width: 90px;
+            text-align: center;
+            box-shadow: 5px 2px 9px 7px blue;
+        }
+        .proim {
+            width: 350px;
+            border-radius: 20px;
+            display: block; /* Ensures proper spacing */
+            margin: 0 auto; /* Centers the images */
+            box-shadow: 10px 4px 18px 14px blue;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+          
+        }
+         .proim.visible {
+         opacity: 1;
+         transform: translateY(0);
+       }
+        .sec1 {
+            margin-top: 100px; /* Increased to account for fixed header */
+            padding: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1 {
+            text-align: center;
+             color: white;
+            font-size: 25px;
+            font-weight: normal; /* Ensures normal weight */
+        }
+        p {
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.6; /* Better readability */
+            color: white;
+        }
+        .lg1{
+            text-decoration:none;
+            color: white;
+            border-radius:6px;
+            padding:15px;
+            background-color: darkblue;
+            margin-left:80px;
+            border:none;
+            box-shadow: 5px 2px 9px 7px blue;
+        }
+        .lg {
+            text-decoration:none;
+            color: white;
+            border-radius:6px;
+            padding:15px;
+            background-color: darkblue;
+            border:none;
+            box-shadow: 5px 2px 9px 7px blue;
+        }
+        .Gts {
+            text-decoration: none;
+            border-radius: 7px;
+            width: 90%;
+            max-width: 300px;
+            padding: 15px;
+            background-color: darkblue;
+            display: block;
+            text-align: center;
+            color: white;
+            margin: 30px auto;
+            font-size: 18px;
+            box-shadow: 5px 2px 9px 7px blue; 
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .proim {
+                width: 100%;
+            }
+            .logo-text {
+                font-size: 40px;
+            }
+            .myl {
+                flex-direction: column;
+                align-items: center;
+            }
+            .lg1, .lg {
+                width: 30%;
+            }
+        }
+        body{
+            background-color: #000080;
+        }
+    </style>
+</head>
+<body>
+    <section class="header">
+        <div class="mis">
+            <img src="Animologo.jpg" alt="Miamor Logo" class="img">
+            <span class="logo-text"></span>
+        </div>
+        <div class="miz">
+            <a href="" class="msu">signup</a>
+        </div>
+    </section>
+    
+    <section class="sec1">
+        <img src="third.jpg" alt="Miamor showcase" class="proim">
+        <h1>ANIMO WEB</h1>
+        <p>Earn rewards for verified movement and fitness activity</p>
+        
+        <div class="myl">
+            <button id="btn1" class="lg1">login</button>
+            <button id="btn2" class="lg">sign up</button>
+        </div>
+        <br>
+        <br>
+        <img src="second.jpg" alt="Miamor gaming" class="proim">
+        <br>
+        <p>Get recognised for genuine social engagement and advocacy </p>
+        <br>
+        <img src="my first.jpg" alt=""class="proim">
+        <br>
+        <p>Explore and build within the Animo digital ecosystem.
+Create and personalize your virtual spaces, showcase your work, and grow your portfolio as community interaction increases.</p>
+         <br>
+        <h1></h1>
+        <img src="first.jpg" alt="Miamor Plus Package" class="proim">
+         <br>
+        <p>Share your creativity and earn recognition.
+Join Animo’s verified creator program to share official stories and receive engagement-based rewards on supported platforms.</p>
+         <br>
+        <h1></h1>
+        <img src="fourth.jpg" alt="Miamor Ultra Package" class="proim">
+         <br>
+        <p>ANIMO SILVER PACKAGE REG. FEE IS ₦10,000</p>
+         <br>
+        <img src="fifth.jpg" alt="Miamor features" class="proim">
+         <br>
+        <p>ANIMO GOLD PACKAGE REG. FEE IS ₦15,000</p>
+        <br>
+        <img src="sixth.jpg" alt="Miamor features" class="proim">
+         <br>
+        <p>ANIMO PLATFORM IS OFFICIALLY REGISTERED WITH GOV.</p>
+        <a href="" class="Gts">Get Started</a>
+    </section>
+    
+    <script>
+        document.getElementById("btn2").addEventListener("click", () => {
+            window.location.href = "";
+        });
+
+        document.getElementById("btn1").addEventListener("click", () => {
+            window.location.href = "";
+        });
+
+        // Even simpler version
+document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            entry.target.classList.toggle('visible', entry.isIntersecting);
+        });
+    }, { threshold: 0.9});
+
+    document.querySelectorAll('.proim').forEach(img => observer.observe(img));
+});
+      
+    </script>
+</body>
+</html>
